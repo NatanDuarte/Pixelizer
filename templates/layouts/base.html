@@ -7,12 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% block title %}{% endblock %} - Pixelizer</title>
     <link rel="stylesheet" href="../../static/node_modules/materialize-css/dist/css/materialize.min.css">
+    <link rel="stylesheet" href="../../static/css/custom.css">
     {% endblock %}
 </head>
 <body>
     <header>
-        <nav>
-            <div class="nav-wrapper">
+        <nav class="orange darken-2">
+            <div class="nav-wrapper container">
                 <a href="#" class="brand-logo">Pixelizer</a>
             </div>
         </nav>
@@ -25,6 +26,22 @@
 
     <footer>
         {% block footer %}
+        
+        <footer class="page-footer orange darken-3">
+            <div class="container">
+                <div class="row">
+                    <div class="col l6 s12">
+                        <h5 class="white-text">Flask App</h5>
+                        <p class="grey-text text-lighten-4">Proof of concept web app</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <div class="container">
+                    developed by <a class="grey-text text-lighten-4 right" href="#!">Natan Duarte</a>
+                </div>
+            </div>
+        </footer>
         {% endblock %}
     </footer>
 
