@@ -6,6 +6,27 @@
 {% block content %}
 {{ super() }}
 
-    <h1>Content</h1>
+    <div class="container">
+        <form action="/">
+            <div class="row center">
+                <div class="col s12 m6">
+                    <div class="file-field input-field row">
+                        <div class="btn cyan darken-1 col s12 m6">
+                            <span>Browse images</span>
+                            <input type="file" accept="image/gif, image/jpg, image/jpeg, image/png">
+                        </div>
+                        <div class="file-path-wrapper col s12 m6">
+                            <input class="file-path validate" type="text">
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m6">
+                    <div class="file-field input-field row">
+                        <input value="process" type="submit" class="btn orange darken-3 col s12 m6">
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
 
 {% endblock %}
